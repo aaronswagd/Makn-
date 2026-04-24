@@ -766,3 +766,20 @@ section {
     gap: 20px;
   }
 }
+
+.contact-email {
+  margin-top: 24px;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-email a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.contact-email a:hover {
+  color: #ffffff;
+}
