@@ -220,7 +220,7 @@ h1, h2, h3 {
 }
 
 /* ==========================================
-   4. COLOR SYSTEM
+   4. COLOR PALETTE — REFINED
    ========================================== */
 .color-palette {
   display: grid;
@@ -230,55 +230,90 @@ h1, h2, h3 {
   margin-top: 40px;
 }
 
-/* BLOQUES */
 .color-block {
-  padding: 50px 45px;
+  padding: 50px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 260px;
 }
 
-/* COLORES EXACTOS */
-.color-1 { background: #f1bb6a; }
-.color-2 { background: #b08456; }
-.color-3 { background: #6d8450; }
+/* Fondos */
+.color-1 { background: #F1BB6A; }
+.color-2 { background: #B08456; }
+.color-3 { background: #6D8450; }
+
+/* Texto según contraste de fondo */
+.color-1,
+.color-1 .color-hex,
+.color-1 .color-name,
+.color-1 .color-label,
+.color-1 .color-value {
+  color: #3d2e1a;
+}
+
+.color-2,
+.color-2 .color-hex,
+.color-2 .color-name,
+.color-2 .color-label,
+.color-2 .color-value {
+  color: #fef9f0;
+}
+
+.color-3,
+.color-3 .color-hex,
+.color-3 .color-name,
+.color-3 .color-label,
+.color-3 .color-value {
+  color: #fef9f0;
+}
 
 /* HEX */
 .color-hex {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 35px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 6px;
   display: block;
+  letter-spacing: 0.02em;
 }
 
-/* COLUMNAS */
+/* Nombre */
+.color-name {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 32px;
+  opacity: 0.7;
+}
+
+/* Columnas */
 .color-columns {
   display: flex;
-  gap: 55px;
+  gap: 30px;
 }
 
-.color-columns div {
+.color-column {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
 }
 
-/* TEXTO */
-.color-columns p {
-  margin: 0;
-  font-size: 15px;
-  line-height: 1.4;
+.color-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  opacity: 0.55;
 }
 
-/* COLORES DE TEXTO (AJUSTADOS FINO) */
-.color-1 {
-  color: #6b7f4f;
-}
-
-.color-2 {
-  color: #f2b36d;
-}
-
-.color-3 {
-  color: #f2b36d;
+.color-value {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.85;
 }
 
 /* ==========================================
@@ -291,20 +326,6 @@ h1, h2, h3 {
   margin-top: 20px;
 }
 
-/* Color values */
-.cs-color-values {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  margin-top: 10px;
-}
-
-.cs-color-values span {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.75rem;
-  color: #888;
-  letter-spacing: 0.01em;
-}
 .cs-type-label {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 0.8rem;
@@ -628,10 +649,6 @@ h1, h2, h3 {
     gap: 40px;
   }
 
-  .cs-color-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .cs-logo-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -674,6 +691,20 @@ h1, h2, h3 {
     font-size: 2rem;
   }
 
+  /* Color palette responsive */
+  .color-palette {
+    grid-template-columns: 1fr;
+  }
+
+  .color-block {
+    min-height: auto;
+    padding: 40px 30px;
+  }
+
+  .color-columns {
+    gap: 24px;
+  }
+
   .cs-mockup-grid {
     grid-template-columns: 1fr;
   }
@@ -692,10 +723,6 @@ h1, h2, h3 {
 
   .cs-results-grid {
     grid-template-columns: 1fr;
-  }
-
-  .cs-color-grid {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .cs-logo-grid {
