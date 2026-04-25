@@ -388,10 +388,17 @@ h1, h2, h3 {
   margin-bottom: 12px;
 }
 
-.gero-chars-demo {
+.gero-chars-black {
   font-family: 'Raleway', sans-serif;
   font-size: 0.85rem;
-  font-weigth: 900;
+  font-weight: 900;
+  color: #aaa;
+}
+
+.gero-chars-light {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 300;
   color: #aaa;
 }
 
