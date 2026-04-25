@@ -540,17 +540,23 @@ h1, h2, h3 {
   transform: scale(1.03);
 }
 
-.contact-email a {
-  color: rgba(0, 0, 0, 0.6);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
+.cs-final-cta .contact-email {
+  margin-top: 28px;
+  font-size: 0.95rem;
+  color: #888;
 }
 
-.contact-email a:hover {
-  color: #000;
-  border-bottom-color: #000;
+.cs-final-cta .contact-email a {
+  color: #555;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
 }
+
+.cs-final-cta .contact-email a:hover {
+  color: #0b0b0b;
+}
+
 /* ==========================================
    FOOTER
    ========================================== */
