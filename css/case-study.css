@@ -351,8 +351,16 @@ h1, h2, h3 {
   letter-spacing: -0.02em;
 }
 
+
+.cs-type-sample-heading.raleway-font {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
 .cs-type-sample-body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.1rem;
   line-height: 1.6;
   color: #4a4a4a;
