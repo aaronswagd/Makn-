@@ -540,6 +540,16 @@ h1, h2, h3 {
   transform: scale(1.03);
 }
 
+.cs-final-cta .contact-email a {
+  color: #888;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.cs-final-cta .contact-email a:hover {
+  color: #555;
+}
 /* ==========================================
    FOOTER
    ========================================== */
