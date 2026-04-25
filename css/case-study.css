@@ -238,6 +238,10 @@ h1, h2, h3 {
   min-height: 260px;
 }
 
+.color-top {
+  margin-bottom: auto;
+}
+
 /* Fondos */
 .color-1 { background: #F1BB6A; }
 .color-2 { background: #B08456; }
@@ -285,7 +289,7 @@ h1, h2, h3 {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   opacity: 0.7;
 }
 
@@ -351,16 +355,8 @@ h1, h2, h3 {
   letter-spacing: -0.02em;
 }
 
-
-.cs-type-sample-heading.raleway-font {
-  font-family: 'Raleway', sans-serif;
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-}
-
 .cs-type-sample-body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
   line-height: 1.6;
   color: #4a4a4a;
@@ -368,6 +364,32 @@ h1, h2, h3 {
 }
 
 .cs-type-chars {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+/* GERO — Raleway demo classes */
+.gero-heading-demo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  letter-spacing: 0.04em;
+  color: #0a0a0a;
+}
+
+.gero-body-demo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #4a4a4a;
+  margin-bottom: 12px;
+}
+
+.gero-chars-demo {
+  font-family: 'Raleway', sans-serif;
   font-size: 0.85rem;
   color: #aaa;
 }
@@ -597,21 +619,22 @@ h1, h2, h3 {
   transform: scale(1.03);
 }
 
+/* EMAIL — CORREGIDO: gris visible, negro al hover */
 .cs-final-cta .contact-email {
   margin-top: 28px;
   font-size: 0.95rem;
-  color: #888;
+  color: #888 !important;
 }
 
 .cs-final-cta .contact-email a {
-  color: #555;
+  color: #555 !important;
   text-decoration: underline;
   text-underline-offset: 3px;
   transition: color 0.2s ease;
 }
 
 .cs-final-cta .contact-email a:hover {
-  color: #0b0b0b;
+  color: #0b0b0b !important;
 }
 
 /* ==========================================
@@ -699,7 +722,6 @@ h1, h2, h3 {
     font-size: 2rem;
   }
 
-  /* Color palette responsive */
   .color-palette {
     grid-template-columns: 1fr;
   }
