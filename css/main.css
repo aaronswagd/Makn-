@@ -770,3 +770,27 @@ section {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media (max-width: 1024px) {
+  /* ... todo lo demás que ya tienes ... */
+
+  /* Luminaire: texto arriba, imagen abajo en móvil */
+  .project-layout-full {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-layout-full .project-hero-full {
+    order: 2;
+  }
+
+  .project-layout-full .project-info-full {
+    order: 1;
+    text-align: left;
+    margin: 0 0 30px 0;
+  }
+
+  .project-layout-full .project-info-full .project-description {
+    margin-left: 0;
+  }
+}
