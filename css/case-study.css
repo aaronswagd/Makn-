@@ -225,17 +225,14 @@ h1, h2, h3 {
 .color-palette {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border-radius: 28px;
+  border-radius: 30px;
   overflow: hidden;
   margin-top: 40px;
 }
 
 /* BLOQUES */
 .color-block {
-  padding: 48px 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding: 50px 45px;
 }
 
 /* COLORES EXACTOS */
@@ -243,42 +240,45 @@ h1, h2, h3 {
 .color-2 { background: #b08456; }
 .color-3 { background: #6d8450; }
 
-/* CONTENIDO */
-.color-inner {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-}
-
-/* HEX (protagonista) */
+/* HEX */
 .color-hex {
   font-family: "Space Grotesk", sans-serif;
-  font-size: 1.3rem;
+  font-size: 20px;
   font-weight: 500;
-  letter-spacing: 0.5px;
+  margin-bottom: 35px;
+  display: block;
 }
 
 /* COLUMNAS */
 .color-columns {
   display: flex;
-  gap: 48px;
-  font-size: 0.95rem;
-  line-height: 1.6;
+  gap: 55px;
 }
 
-/* TEXTO BASE */
+.color-columns div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* TEXTO */
 .color-columns p {
   margin: 0;
+  font-size: 15px;
+  line-height: 1.4;
 }
 
-/* 🎯 COLOR DE TEXTO ADAPTADO (CLAVE) */
-.color-1,
+/* COLORES DE TEXTO (AJUSTADOS FINO) */
+.color-1 {
+  color: #6b7f4f;
+}
+
 .color-2 {
-  color: #f6d7a8;
+  color: #f2b36d;
 }
 
 .color-3 {
-  color: #f2c48a;
+  color: #f2b36d;
 }
 
 /* ==========================================
