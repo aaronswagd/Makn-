@@ -242,36 +242,6 @@ h1, h2, h3 {
   margin-bottom: auto;
 }
 
-/* Fondos */
-.color-1 { background: #F1BB6A; }
-.color-2 { background: #B08456; }
-.color-3 { background: #6D8450; }
-
-/* Texto según contraste de fondo */
-.color-1,
-.color-1 .color-hex,
-.color-1 .color-name,
-.color-1 .color-label,
-.color-1 .color-value {
-  color: #3d2e1a;
-}
-
-.color-2,
-.color-2 .color-hex,
-.color-2 .color-name,
-.color-2 .color-label,
-.color-2 .color-value {
-  color: #fef9f0;
-}
-
-.color-3,
-.color-3 .color-hex,
-.color-3 .color-name,
-.color-3 .color-label,
-.color-3 .color-value {
-  color: #fef9f0;
-}
-
 /* HEX */
 .color-hex {
   font-family: "Space Grotesk", sans-serif;
@@ -403,24 +373,56 @@ h1, h2, h3 {
 }
 
 /* ==========================================
-   6. LOGO GRID
+   6. LOGO GRID — UNIFICADO
    ========================================== */
 .cs-logo-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   margin-top: 30px;
 }
 
 .cs-logo-card {
+  background: #f5f5f5;
+  border-radius: 20px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-height: 200px;
   text-align: center;
 }
 
+.cs-logo-card img {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  max-height: 110px;
+  object-fit: contain;
+  display: block;
+}
+
+.cs-logo-card.cs-dark {
+  background: #1a1a1a;
+}
+
+.cs-logo-card.cs-dark .cs-logo-card-label {
+  color: #aaa;
+}
+
+.cs-logo-card-label {
+  font-size: 0.85rem;
+  color: #888;
+  font-weight: 500;
+}
+
+/* Placeholders para texto (si no usas imágenes) */
 .cs-logo-placeholder {
   background: #f5f5f5;
   border-radius: 20px;
   padding: 40px 20px;
-  margin-bottom: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -456,31 +458,6 @@ h1, h2, h3 {
   color: #0b0b0b;
 }
 
-.cs-logo-card-label {
-  font-size: 0.85rem;
-  color: #888;
-  font-weight: 500;
-}
-/* ==========================================
-   LOGO SYSTEM — IMAGE FIX
-   ========================================== */
-.cs-logo-card img {
-  width: 100%;
-  height: auto;
-  max-height: 120px;
-  object-fit: contain;
-  display: block;
-}
-
-.cs-logo-card.cs-dark {
-  background: #1a1a1a;
-  border-radius: 20px;
-  padding: 40px 20px;
-}
-
-.cs-logo-card.cs-dark .cs-logo-card-label {
-  color: #aaa;
-}
 /* ==========================================
    7. MOCKUPS
    ========================================== */
@@ -524,45 +501,6 @@ h1, h2, h3 {
   grid-column: span 2;
 }
 
-/* ==========================================
-   LOGO SYSTEM — VISIBLE CARDS
-   ========================================== */
-.cs-logo-card {
-  background: #f5f5f5;
-  border-radius: 20px;
-  padding: 40px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  min-height: 180px;
-}
-
-.cs-logo-card img {
-  width: 100%;
-  max-width: 160px;
-  height: auto;
-  max-height: 100px;
-  object-fit: contain;
-  display: block;
-}
-
-/* Negative version */
-.cs-logo-card.cs-dark {
-  background: #1a1a1a;
-}
-
-.cs-logo-card.cs-dark .cs-logo-card-label {
-  color: #aaa;
-}
-
-.cs-logo-card-label {
-  font-size: 0.85rem;
-  color: #888;
-  font-weight: 500;
-  text-align: center;
-}
 /* ==========================================
    8. DETAIL SHOTS
    ========================================== */
@@ -685,7 +623,7 @@ h1, h2, h3 {
   transform: scale(1.03);
 }
 
-/* EMAIL — CORREGIDO: gris visible, negro al hover */
+/* EMAIL */
 .cs-final-cta .contact-email {
   margin-top: 28px;
   font-size: 0.95rem;
@@ -823,5 +761,15 @@ h1, h2, h3 {
 
   .cs-logo-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .cs-logo-card {
+    min-height: 160px;
+    padding: 30px 16px;
+  }
+
+  .cs-logo-card img {
+    max-width: 140px;
+    max-height: 90px;
   }
 }
