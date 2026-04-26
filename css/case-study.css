@@ -461,7 +461,26 @@ h1, h2, h3 {
   color: #888;
   font-weight: 500;
 }
+/* ==========================================
+   LOGO SYSTEM — IMAGE FIX
+   ========================================== */
+.cs-logo-card img {
+  width: 100%;
+  height: auto;
+  max-height: 120px;
+  object-fit: contain;
+  display: block;
+}
 
+.cs-logo-card.cs-dark {
+  background: #1a1a1a;
+  border-radius: 20px;
+  padding: 40px 20px;
+}
+
+.cs-logo-card.cs-dark .cs-logo-card-label {
+  color: #aaa;
+}
 /* ==========================================
    7. MOCKUPS
    ========================================== */
