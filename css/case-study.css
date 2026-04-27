@@ -416,6 +416,9 @@ h1, h2, h3 {
   font-size: 0.85rem;
   color: #888;
   font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 
 /* Placeholders para texto (si no usas imágenes) */
