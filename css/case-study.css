@@ -430,24 +430,14 @@ h1, h2, h3 {
 .cs-detail-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: 32px;
   margin-top: 30px;
 }
 
 .cs-detail-item {
   display: flex;
   flex-direction: column;
-  border-radius: 20px;
-  overflow: visible;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.04);
-  transition: all 0.4s ease;
-  cursor: pointer;
-  background: transparent;
-}
-
-.cs-detail-item:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+  gap: 0;
 }
 
 .cs-detail-item img {
@@ -455,19 +445,20 @@ h1, h2, h3 {
   height: 280px;
   object-fit: cover;
   display: block;
-  border-radius: 20px 20px 0 0;
-  transition: transform 0.6s ease;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.04);
+  transition: transform 0.6s ease, box-shadow 0.4s ease;
 }
 
 .cs-detail-item:hover img {
-  transform: scale(1.06);
+  transform: scale(1.03);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
 }
 
-/* Label del Design Process */
 .cs-process-label {
   display: block;
   text-align: left;
-  padding: 12px 0 0 0;
+  padding: 14px 4px 0 4px;
   font-size: 0.85rem;
   color: #888;
   font-weight: 500;
