@@ -484,7 +484,7 @@ img {
   transform: scale(1.06);
 }
 
-/* Proyecto full-width (Luminaire) */
+/* Proyecto full-width */
 .project-card--full {
   margin-top: 20px;
 }
@@ -693,6 +693,12 @@ img {
   margin-bottom: 50px;
 }
 
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
 .carousel-track {
   display: flex;
   gap: 24px;
@@ -700,7 +706,9 @@ img {
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+  scroll-behavior: smooth;
   padding-bottom: 10px;
+  width: 100%;
 }
 
 .carousel-track::-webkit-scrollbar {
@@ -729,6 +737,42 @@ img {
   display: block;
 }
 
+/* Botones de navegación */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+  font-size: 1.2rem;
+  color: #0b0b0b;
+}
+
+.carousel-btn:hover {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.carousel-btn--prev {
+  left: -20px;
+}
+
+.carousel-btn--next {
+  right: -20px;
+}
+
 @media (max-width: 768px) {
   .carousel-item {
     flex: 0 0 85%;
@@ -742,7 +786,22 @@ img {
   .more-work-section {
     padding: 60px 0 30px;
   }
+
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .carousel-btn--prev {
+    left: -12px;
+  }
+
+  .carousel-btn--next {
+    right: -12px;
+  }
 }
+
 /* ==========================================
    FINAL CTA
    ========================================== */
