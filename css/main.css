@@ -681,9 +681,10 @@ img {
 
 .testimonials-track {
   display: flex;
-  gap: 32px;
+  gap: 24px;
   width: max-content;
-  animation: testimonialScroll 35s linear infinite;
+  animation: testimonialScroll 30s linear infinite;
+  align-items: stretch;
 }
 
 .testimonials-track:hover {
@@ -691,26 +692,27 @@ img {
 }
 
 .testimonial-card {
-  flex: 0 30 450px;
+  flex: 0 0 380px;
   background: #f9f9f9;
   border-radius: 24px;
-  padding: 40px 36px;
+  padding: 32px 28px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  min-height: 160px;
 }
 
 .testimonial-card .testimonial-quote {
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: 500;
   color: #2c2c2c;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  line-height: 1.5;
+  margin-bottom: 16px;
 }
 
 .testimonial-card .testimonial-author {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #888;
   font-weight: 500;
 }
@@ -726,12 +728,13 @@ img {
 
 @media (max-width: 768px) {
   .testimonial-card {
-    flex: 0 0 320px;
-    padding: 28px 24px;
+    flex: 0 0 300px;
+    padding: 24px 20px;
+    min-height: 140px;
   }
 
   .testimonial-card .testimonial-quote {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
   
   .testimonials-section {
